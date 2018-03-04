@@ -4,6 +4,10 @@
         "source": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\route1back.png"
     },
     {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\route01.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\route01.png"
+    },
+    {
         "merged": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\route01.png",
         "source": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\route01.png"
     },
@@ -12,8 +16,36 @@
         "source": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\loginbuttonback2.png"
     },
     {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\qrcode.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\qrcode.png"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher_round.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\loginbuttonback2.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\loginbuttonback2.png"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\loginback.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\loginback.png"
+    },
+    {
         "merged": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\routelistback.png",
         "source": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\routelistback.png"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\routelistback.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\routelistback.png"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\route1back.png",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\mipmap-xxxhdpi\\route1back.png"
     },
     {
         "merged": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\qrcode.png",

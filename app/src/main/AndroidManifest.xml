@@ -15,7 +15,7 @@
         android:icon="@drawable/icon"
         android:label="MultiTrackerApp"
         android:supportsRtl = "true"
-        android:theme="@style/Theme.AppCompat" >
+        android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -41,6 +41,7 @@
         <activity android:name=".Route"/>
         <activity android:name=".RouteList"/>
         <activity android:name=".MapActivity"/>
+        <activity android:name=".Orders"/>
     </application>
 
 </manifest>

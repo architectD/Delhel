@@ -28,6 +28,7 @@ public class MapActivity extends AppCompatActivity {
         for (EditText editText: RouteList.editTexts){
             strings.add(editText.getText().toString());
         }
+        strings.addFirst(RouteList.startAddress);
         strings.removeLast();
 
         try {

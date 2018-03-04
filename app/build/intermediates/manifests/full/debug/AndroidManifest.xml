@@ -6,7 +6,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="15"
         android:targetSdkVersion="24" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -22,7 +22,7 @@
         android:icon="@drawable/icon"
         android:label="MultiTrackerApp"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat" >
+        android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -47,6 +47,7 @@
         <activity android:name="com.google.android.gms.samples.vision.barcodereader.Route" />
         <activity android:name="com.google.android.gms.samples.vision.barcodereader.RouteList" />
         <activity android:name="com.google.android.gms.samples.vision.barcodereader.MapActivity" />
+        <activity android:name="com.google.android.gms.samples.vision.barcodereader.Orders" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

@@ -8,8 +8,16 @@
         "source": "C:\\Users\\Petrovich\\Desktop\\barcode-reader\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
         "merged": "C:\\Users\\Petrovich\\Desktop\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
         "source": "C:\\Users\\Petrovich\\Desktop\\barcode-reader\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_appbar_state_list_animator.xml",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\anim-v21\\design_appbar_state_list_animator.xml"
     },
     {
         "merged": "C:\\Users\\Petrovich\\Desktop\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_appbar_state_list_animator.xml",
@@ -22,5 +30,9 @@
     {
         "merged": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_appbar_state_list_animator.xml",
         "source": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\anim-v21\\design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     }
 ]

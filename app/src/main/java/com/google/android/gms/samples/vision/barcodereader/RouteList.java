@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,11 +29,15 @@ public class RouteList extends AppCompatActivity{
     public static LinkedList<EditText> editTexts = new LinkedList<>();
     ScrollView scrollView;
     LinearLayout linearLayout;
+    EditText address;
+    public static String startAddress;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route_list);
 
+        address = (EditText)findViewById(R.id.editText12);
+        address.setText(startAddress);
         scrollView = (ScrollView) findViewById(R.id.scrollView2);
         linearLayout =  (LinearLayout) scrollView.getChildAt(0);
         statusMessage = (TextView)findViewById(R.id.status_message);
@@ -63,17 +68,18 @@ public class RouteList extends AppCompatActivity{
 
                     EditText editText = new EditText(this);
                     editText1.setText(barcode.displayValue);
-                    editText.setText("Добавить адрес");
+                    //editText.setText("Добавить адрес");
+                    editText.setInputType(InputType.TYPE_NULL);
                     editText.setBackgroundColor(Color.parseColor("#F2F2F2"));
 
                     LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(editText1.getWidth(),
-                            editText1.getHeight());
+                            ViewGroup.LayoutParams.WRAP_CONTENT);
                     parms.topMargin = 18;
                     parms.leftMargin = editText1.getLeft();
 
                     editText.setLayoutParams(parms);
 
-                    linearLayout.addView(editText);//, editText1.getWidth(), editText1.getHeight());
+                    linearLayout.addView(editText);
                     editTexts.add(editText1);
 
                     if (!flag) {

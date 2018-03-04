@@ -12,6 +12,14 @@
         "source": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\src\\main\\res\\layout-land\\activity_main.xml"
     },
     {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\barcode_capture.xml",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\layout-land\\barcode_capture.xml"
+    },
+    {
+        "merged": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_main.xml",
+        "source": "C:\\Projects\\ProjectX\\ProjectY\\barcode-reader\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\barcode_capture.xml",
         "source": "C:\\Users\\SuperDru\\Desktop\\ProjectX\\barcode-reader\\app\\src\\main\\res\\layout-land\\barcode_capture.xml"
     }
