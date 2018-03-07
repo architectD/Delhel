@@ -14,14 +14,17 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:fullBackupContent="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon"
         android:label="MultiTrackerApp"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.gms.version"
@@ -30,7 +33,9 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
 
-        <activity android:name="com.google.android.gms.samples.vision.barcodereader.Login" >
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.Login"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,16 +43,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeMain"
-            android:label="@string/title_activity_main" >
-        </activity>
-        <activity
             android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
-            android:label="Read Barcode" />
-        <activity android:name="com.google.android.gms.samples.vision.barcodereader.Route" />
-        <activity android:name="com.google.android.gms.samples.vision.barcodereader.RouteList" />
-        <activity android:name="com.google.android.gms.samples.vision.barcodereader.MapActivity" />
-        <activity android:name="com.google.android.gms.samples.vision.barcodereader.Orders" />
+            android:label="Read Barcode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.Route"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.RouteList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.Orders"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

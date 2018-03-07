@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +16,7 @@
         android:icon="@drawable/icon"
         android:label="MultiTrackerApp"
         android:supportsRtl = "true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -23,7 +24,9 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
 
-        <activity android:name=".Login">
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,17 +34,19 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".BarcodeMain"
-            android:label="@string/title_activity_main" >
-        </activity>
-
         <activity android:name=".BarcodeCaptureActivity"
+            android:screenOrientation="portrait"
             android:label="Read Barcode"/>
-        <activity android:name=".Route"/>
-        <activity android:name=".RouteList"/>
-        <activity android:name=".MapActivity"/>
-        <activity android:name=".Orders"/>
+        <activity android:name=".Route"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RouteList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Orders"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

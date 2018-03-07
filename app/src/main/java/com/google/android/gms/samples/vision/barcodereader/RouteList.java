@@ -19,36 +19,28 @@ import com.google.android.gms.vision.barcode.Barcode;
 import java.util.LinkedList;
 
 public class RouteList extends AppCompatActivity{
-    private TextView statusMessage;
-    int count = 0;
-
     private static final int RC_BARCODE_CAPTURE = 9001;
-    private static final String TAG = "RouteList";
     public static boolean flag = false;
 
     public static LinkedList<EditText> editTexts = new LinkedList<>();
     ScrollView scrollView;
     LinearLayout linearLayout;
-    EditText address;
+    TextView address;
     public static String startAddress;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route_list);
 
-        address = (EditText)findViewById(R.id.editText12);
+        address = (TextView)findViewById(R.id.editText12);
         address.setText(startAddress);
         scrollView = (ScrollView) findViewById(R.id.scrollView2);
         linearLayout =  (LinearLayout) scrollView.getChildAt(0);
-        statusMessage = (TextView)findViewById(R.id.status_message);
     }
 
     public void onClickBarCode(View view){
         flag = false;
         Intent intent = new Intent(this, BarcodeCaptureActivity.class);
-        intent.putExtra(BarcodeCaptureActivity.AutoFocus, true);
-        intent.putExtra(BarcodeCaptureActivity.UseFlash, false);
-
         startActivityForResult(intent, RC_BARCODE_CAPTURE);
     }
 
@@ -60,43 +52,26 @@ public class RouteList extends AppCompatActivity{
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == RC_BARCODE_CAPTURE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
-                if (data != null) {
+                if (data != null && !flag) {
                     Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
-                    Log.d(TAG, "Barcode read: " + barcode.displayValue);
 
-                    EditText editText1 = (EditText) linearLayout.getChildAt(linearLayout.getChildCount() - 1);
+                    EditText topEditText = (EditText) linearLayout.getChildAt(linearLayout.getChildCount() - 1);
+                    topEditText.setText(barcode.displayValue);
 
-                    EditText editText = new EditText(this);
-                    editText1.setText(barcode.displayValue);
-                    //editText.setText("Добавить адрес");
-                    editText.setInputType(InputType.TYPE_NULL);
-                    editText.setBackgroundColor(Color.parseColor("#F2F2F2"));
+                    EditText bottomEditText = new EditText(this);
+                    bottomEditText.setLayoutParams(topEditText.getLayoutParams());
+                    bottomEditText.setHint(bottomEditText.getHint());
+                    bottomEditText.setImeOptions(topEditText.getImeOptions());
+                    bottomEditText.setBackgroundColor(bottomEditText.getDrawingCacheBackgroundColor());
 
-                    LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(editText1.getWidth(),
-                            ViewGroup.LayoutParams.WRAP_CONTENT);
-                    parms.topMargin = 18;
-                    parms.leftMargin = editText1.getLeft();
+                    topEditText.setInputType(InputType.TYPE_NULL);
 
-                    editText.setLayoutParams(parms);
+                    linearLayout.addView(bottomEditText);
+                    editTexts.add(topEditText);
 
-                    linearLayout.addView(editText);
-                    editTexts.add(editText1);
-
-                    if (!flag) {
-                        Intent intent = new Intent(this, BarcodeCaptureActivity.class);
-                        intent.putExtra(BarcodeCaptureActivity.AutoFocus, true);
-                        intent.putExtra(BarcodeCaptureActivity.UseFlash, false);
-
-                        startActivityForResult(intent, RC_BARCODE_CAPTURE);
-                    }
-
-                } else {
-                    statusMessage.setText(R.string.barcode_failure);
-                    Log.d(TAG, "No barcode captured, intent data is null");
+                    Intent intent = new Intent(this, BarcodeCaptureActivity.class);
+                    startActivityForResult(intent, RC_BARCODE_CAPTURE);
                 }
-            } else {
-                statusMessage.setText(String.format(getString(R.string.barcode_error),
-                        CommonStatusCodes.getStatusCodeString(resultCode)));
             }
         }
         else {

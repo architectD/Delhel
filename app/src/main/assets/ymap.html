@@ -6,142 +6,158 @@
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no" />
     <script type="text/javascript">
-var minDistance = Number.POSITIVE_INFINITY;
+        var minDistance = Number.POSITIVE_INFINITY;
 
-var nextPermutation = function (array) {
-    var length = array.length;
-    var i = length - 2;
-    while (i >= 0 && array[i] >= array[i + 1])
-        i--;
+        var nextPermutation = function (array) {
+            var length = array.length;
+            var i = length - 2;
+            while (i >= 0 && array[i] >= array[i + 1])
+                i--;
 
-    if (i === -1)
-        return false;
+            if (i === -1)
+                return false;
 
-    //find rightmost position j to the right of i such that array[j] > array[i]
-    var j = i + 1;
-    while (j < length && array[j] > array[i]) {
-        j++;
-    }
-    j--;
-
-    //swap array[i] and array[j]
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-
-    //reverse everything to the right of i
-    var left = i + 1;
-    var right = length - 1;
-
-    while (left < right) {
-        temp = array[left];
-        array[left] = array[right];
-        array[right] = temp;
-        left++;
-        right--;
-    }
-
-    return true;
-};
-
-var getWholeDistance = function(routeArray, distanceArray) {
-    var distance = 0;
-
-    var i = 0;
-    for (i; i < routeArray.length - 1; i++)
-        distance += distanceArray[routeArray[i]][routeArray[i + 1]]
-
-    return distance;
-};
-
-var makeRoute = function(distanceArray) {
-    var length = distanceArray.length;
-    var routeArray = [];
-    for (var j = 1; j < distanceArray.length; j++){
-        routeArray[j - 1] = j;
-    }
-    var tempRouteArray = [];
-    tempRouteArray[0] = 0;
-    var answer = [];
-    while (true) {
-        for (var i = 1; i < routeArray.length + 1; i++){
-            tempRouteArray[i] = routeArray[i - 1];
-        }
-
-        var a = getWholeDistance(tempRouteArray, distanceArray);
-
-        if (a < minDistance) {
-            for (i = 0; i < tempRouteArray.length; i++){
-                answer[i] = tempRouteArray[i];
+            //find rightmost position j to the right of i such that array[j] > array[i]
+            var j = i + 1;
+            while (j < length && array[j] > array[i]) {
+                j++;
             }
-            minDistance = a;
-        }
+            j--;
 
-        if (!nextPermutation(routeArray))
-            return answer;
-    }
-};
+            //swap array[i] and array[j]
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
 
-ymaps.ready(function () {
-    var myMap = new ymaps.Map(
-        'map',{
-            center: [59.973325, 30.342341],
-            zoom: 12,
-            controls: ['geolocationControl', 'zoomControl']
-        },{
-            minZoom: 10,
-            maxZoom: 16
+            //reverse everything to the right of i
+            var left = i + 1;
+            var right = length - 1;
+
+            while (left < right) {
+                temp = array[left];
+                array[left] = array[right];
+                array[right] = temp;
+                left++;
+                right--;
+            }
+
+            return true;
+        };
+
+        var getWholeDistance = function(routeArray, distanceArray) {
+            var distance = 0;
+
+            var i = 0;
+            for (i; i < routeArray.length - 1; i++)
+                distance += distanceArray[routeArray[i]][routeArray[i + 1]]
+
+            return distance;
+        };
+
+        var makeRoute = function(distanceArray) {
+            var length = distanceArray.length;
+            var routeArray = [];
+            for (var j = 1; j < distanceArray.length; j++){
+                routeArray[j - 1] = j;
+            }
+            var tempRouteArray = [];
+            tempRouteArray[0] = 0;
+            var answer = [];
+            while (true) {
+                for (var i = 1; i < routeArray.length + 1; i++){
+                    tempRouteArray[i] = routeArray[i - 1];
+                }
+
+                var a = getWholeDistance(tempRouteArray, distanceArray);
+
+                if (a < minDistance) {
+                    for (i = 0; i < tempRouteArray.length; i++){
+                        answer[i] = tempRouteArray[i];
+                    }
+                    minDistance = a;
+                }
+
+                if (!nextPermutation(routeArray))
+                    return answer;
+            }
+        };
+
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map(
+                'map',{
+                    center: [59.973325, 30.342341],
+                    zoom: 12,
+                    controls: ['geolocationControl', 'zoomControl']
+                },{
+                    minZoom: 10,
+                    maxZoom: 16
+                });
+
+            <!--массив данных-->
+
+            navigator.geolocation.getCurrentPosition(
+        // Обработчик успшеного получения координат
+        function (position) {
+            points[0] = [position.coords.latitude, position.coords.longitude];
+            var length = points.length;
+            var times = []; //Матрица расстояний между точками
+            var i = 0;
+            for (i; i < length; i++){
+                times[i] = [];
+            }
+
+            var j = 0;
+            var count = 0;
+            for (i = 0; i < length; i++){
+                for (j = 0; j < length; j++) {
+                    if (i === j)
+                        times[i][j] = 0;
+                    else {
+                        (function () {
+                            const tmp_i = i;
+                            const tmp_j = j;
+                            ymaps.route([
+                                points[tmp_i],
+                                points[tmp_j]
+                            ]).then(function (route) {
+                                times[tmp_i][tmp_j] = route.getPaths().get(0).getJamsTime();
+                                if (++count >= times.length * times.length - times.length){
+
+                                    var mainRoute = makeRoute(times);
+                                    var pointsResult = [];
+                                    for (var k = 0; k < mainRoute.length; k++){
+                                        pointsResult[k] = points[mainRoute[k]];
+                                    }
+
+                                    //Строим полученный маршрут
+                                    ymaps.route(pointsResult).then(function (route) {
+                                        route.getPaths().options.set({
+                                            strokeColor: '#15a68c', //цвет линии маршрута
+                                            strokeWidth: 4 //ширина линии маршрута
+                                        });
+                                        myMap.geoObjects.add(route); //добавляем маршрут на карту
+                                    });
+                                }
+                            });
+                        })();
+                    }
+                }
+            }
+        },
+
+        // Оработчик неудачного завершения получения коордиант
+        function (error) {
+            alert("При определении координат произошла ошибка. Ее код: " + error.code);
+        },
+
+        // Параметры
+        {
+            enableHighAccuracy : false,     // Режим получения наиболее точных данных
+            timeout : 10000,                // Максиальное время ожидания ответа (в миллисекундах)
+            maximumAge : 1000               // Максимальное время жизни полученных данных
         });
 
-    <!--массив данных-->
-
-
-    var length = points.length;
-    var times = []; //Матрица расстояний между точками
-    var i = 0;
-    for (i; i < length; i++){
-        times[i] = [];
-    }
-
-    var j = 0;
-    var count = 0;
-    for (i = 0; i < length; i++){
-        for (j = 0; j < length; j++) {
-            if (i === j)
-                times[i][j] = 0;
-            else {
-                (function () {
-                    const tmp_i = i;
-                    const tmp_j = j;
-                    ymaps.route([
-                        points[tmp_i],
-                        points[tmp_j]
-                    ]).then(function (route) {
-                        times[tmp_i][tmp_j] = route.getPaths().get(0).getJamsTime();
-                        if (++count >= times.length * times.length - times.length){
-
-                            var mainRoute = makeRoute(times);
-                            var pointsResult = [];
-                            for (var k = 0; k < mainRoute.length; k++){
-                                pointsResult[k] = points[mainRoute[k]];
-                            }
-
-                            //Строим полученный маршрут
-                            ymaps.route(pointsResult).then(function (route) {
-                                route.getPaths().options.set({
-                                    strokeColor: '#15a68c', //цвет линии маршрута
-                                    strokeWidth: 4 //ширина линии маршрута
-                                });
-                                myMap.geoObjects.add(route); //добавляем маршрут на карту
-                            });
-                        }
-                    });
-                })();
-            }
-        }
-    }
-
-});
+        });
     </script>
     <style>
         html, body, #map {

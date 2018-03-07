@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@mipmap/routelistback"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/routelistback">
 
     <TextView
         android:id="@+id/textView2"
@@ -43,18 +42,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText12"
         android:layout_width="323dp"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingBottom="7dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:background="#F2F2F2"
+        android:scrollbars="horizontal"
+        android:singleLine="true"
         android:textColor="@android:color/black"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:focusableInTouchMode="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,17 +71,17 @@
         android:text="Введите адреса доставки"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="@id/textView3"
-        app:layout_constraintTop_toBottomOf="@id/editText12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintLeft_toLeftOf="@id/textView3"
+        app:layout_constraintTop_toBottomOf="@id/editText12"
         app:layout_constraintVertical_bias="0.012" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="357dp"
-        android:layout_height="233dp"
+        android:layout_height="269dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -103,10 +103,12 @@
             <EditText
                 android:layout_width="323dp"
                 android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:layout_marginBottom="14dp"
                 android:layout_marginLeft="12dp"
+                android:imeOptions="actionDone"
                 android:background="#F2F2F2"
-                android:editable="false"
-                android:text=" Добавить адрес"
+                android:hint=" Добавить адрес"
                 android:textColor="@android:color/black" />
 
         </LinearLayout>
@@ -144,10 +146,9 @@
         android:onClick="onClickBarCode"
         android:text="Добавить через QR-коды"
         android:textColor="#4D4D4D"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 </android.support.constraint.ConstraintLayout>
