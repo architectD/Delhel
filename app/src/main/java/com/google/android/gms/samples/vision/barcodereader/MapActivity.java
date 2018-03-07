@@ -28,8 +28,6 @@ public class MapActivity extends AppCompatActivity {
         for (EditText editText: RouteList.editTexts){
             strings.add(editText.getText().toString());
         }
-        strings.addFirst(RouteList.startAddress);
-        strings.removeLast();
 
         try {
             InputStream is = getAssets().open("ymap.html");
@@ -40,9 +38,9 @@ public class MapActivity extends AppCompatActivity {
                 String st = br.readLine();
                 if (st.contains("<!--массив данных-->")){
                     StringBuilder sb = new StringBuilder("var points = [");
+                    sb.append('[').append(RouteList.latitude).append(',').append(RouteList.longitude).append("],");
                     for (String s: strings){
-                        sb.append('"').append(s).append('"');
-                        sb.append(',');
+                        sb.append('"').append(s).append('"').append(',');
                     }
                     sb.replace(sb.length() - 1, sb.length(), "]");
                     sb.append(';');

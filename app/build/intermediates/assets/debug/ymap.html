@@ -95,12 +95,6 @@
 
             <!--массив данных-->
 
-            for (var k: points){
-                if (k === "Моё местоположение"){
-                    k = [ymaps.geolocation.longitude, ymaps.geolocation.latitude];
-                }
-            }
-
             var length = points.length;
             var times = []; //Матрица расстояний между точками
             var i = 0;

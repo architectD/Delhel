@@ -21,6 +21,7 @@ import java.util.LinkedList;
 public class RouteList extends AppCompatActivity{
     private static final int RC_BARCODE_CAPTURE = 9001;
     public static boolean flag = false;
+    public static double latitude, longitude;
 
     public static LinkedList<EditText> editTexts = new LinkedList<>();
     ScrollView scrollView;

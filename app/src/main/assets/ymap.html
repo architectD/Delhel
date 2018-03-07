@@ -95,10 +95,6 @@
 
             <!--массив данных-->
 
-            navigator.geolocation.getCurrentPosition(
-        // Обработчик успшеного получения координат
-        function (position) {
-            points[0] = [position.coords.latitude, position.coords.longitude];
             var length = points.length;
             var times = []; //Матрица расстояний между точками
             var i = 0;
@@ -143,19 +139,6 @@
                     }
                 }
             }
-        },
-
-        // Оработчик неудачного завершения получения коордиант
-        function (error) {
-            alert("При определении координат произошла ошибка. Ее код: " + error.code);
-        },
-
-        // Параметры
-        {
-            enableHighAccuracy : false,     // Режим получения наиболее точных данных
-            timeout : 10000,                // Максиальное время ожидания ответа (в миллисекундах)
-            maximumAge : 1000               // Максимальное время жизни полученных данных
-        });
 
         });
     </script>
