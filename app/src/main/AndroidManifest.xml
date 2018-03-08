@@ -24,6 +24,8 @@
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC2qTjlBDZFOdX5PJVuMTdxQFBvdwLU4nY"/>
 
         <activity
             android:name=".Login"

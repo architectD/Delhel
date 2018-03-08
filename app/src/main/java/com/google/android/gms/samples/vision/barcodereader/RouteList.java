@@ -1,42 +1,57 @@
 package com.google.android.gms.samples.vision.barcodereader;
 
 import android.content.Intent;
-import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.common.api.CommonStatusCodes;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 import com.google.android.gms.vision.barcode.Barcode;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 public class RouteList extends AppCompatActivity{
     private static final int RC_BARCODE_CAPTURE = 9001;
     public static boolean flag = false;
     public static double latitude, longitude;
 
-    public static LinkedList<EditText> editTexts = new LinkedList<>();
+
+    public static LinkedList<TextView> textViews = new LinkedList<>();
     ScrollView scrollView;
     LinearLayout linearLayout;
-    TextView address;
+    TextView address, tempField;
     public static String startAddress;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route_list);
 
-        address = (TextView)findViewById(R.id.editText12);
+        tempField = new TextView(this);
+        address = findViewById(R.id.editText12);
         address.setText(startAddress);
-        scrollView = (ScrollView) findViewById(R.id.scrollView2);
+        scrollView = findViewById(R.id.scrollView2);
         linearLayout =  (LinearLayout) scrollView.getChildAt(0);
+        tempField = (TextView) linearLayout.getChildAt(0);
+        tempField.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickPlace();
+            }
+        });
     }
 
     public void onClickBarCode(View view){
@@ -56,19 +71,7 @@ public class RouteList extends AppCompatActivity{
                 if (data != null && !flag) {
                     Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
 
-                    EditText topEditText = (EditText) linearLayout.getChildAt(linearLayout.getChildCount() - 1);
-                    topEditText.setText(barcode.displayValue);
-
-                    EditText bottomEditText = new EditText(this);
-                    bottomEditText.setLayoutParams(topEditText.getLayoutParams());
-                    bottomEditText.setHint(bottomEditText.getHint());
-                    bottomEditText.setImeOptions(topEditText.getImeOptions());
-                    bottomEditText.setBackgroundColor(bottomEditText.getDrawingCacheBackgroundColor());
-
-                    topEditText.setInputType(InputType.TYPE_NULL);
-
-                    linearLayout.addView(bottomEditText);
-                    editTexts.add(topEditText);
+                    makeNextEnter(barcode.displayValue);
 
                     Intent intent = new Intent(this, BarcodeCaptureActivity.class);
                     startActivityForResult(intent, RC_BARCODE_CAPTURE);
@@ -76,7 +79,53 @@ public class RouteList extends AppCompatActivity{
             }
         }
         else {
-            super.onActivityResult(requestCode, resultCode, data);
+            if (resultCode == RESULT_OK) {
+                Place place = PlaceAutocomplete.getPlace(this, data);
+                try {
+
+                    String[] addresses = place.getAddress().toString().split("ул|,|\\.| |пр");
+                    List<String> addrList = new ArrayList<>();
+                    for (String st: addresses){
+                        if (!st.isEmpty())
+                            addrList.add(st);
+                    }
+                    makeNextEnter(addrList.get(2) + ", " + addrList.get(0) + " " + addrList.get(1));
+                } catch (Exception e){}
+            }
+        }
+    }
+
+    private void makeNextEnter(String place){
+        TextView topEditText = (TextView) linearLayout.getChildAt(linearLayout.getChildCount() - 1);
+        topEditText.setText(place);
+
+        TextView bottomEditText = new TextView(this);
+        bottomEditText.setLayoutParams(topEditText.getLayoutParams());
+        bottomEditText.setHint(topEditText.getHint());
+        bottomEditText.setTextSize(18);
+        bottomEditText.setHintTextColor(topEditText.getHintTextColors());
+        bottomEditText.setBackgroundColor(((ColorDrawable)topEditText.getBackground()).getColor());
+        bottomEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickPlace();
+            }
+        });
+        topEditText.setOnClickListener(null);
+
+        linearLayout.addView(bottomEditText);
+        textViews.add(topEditText);
+    }
+
+    private void clickPlace() {
+        try {
+            Intent intent =
+                    new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
+                            .build(RouteList.this);
+            startActivityForResult(intent, 15);
+        } catch (Exception e) {
+            Toast toast = Toast.makeText(RouteList.this, "Требуется скачать Серивисы Google play.", Toast.LENGTH_LONG);
+            toast.show();
         }
     }
 }

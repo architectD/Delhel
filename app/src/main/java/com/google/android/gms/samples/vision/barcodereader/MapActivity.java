@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,13 +20,13 @@ public class MapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.map_activity);
 
-        WebView myWebView = (WebView) findViewById(R.id.webView);
+        WebView myWebView = findViewById(R.id.webView);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         LinkedList<String> strings = new LinkedList<>();
-        for (EditText editText: RouteList.editTexts){
-            strings.add(editText.getText().toString());
+        for (TextView textView: RouteList.textViews){
+            strings.add(textView.getText().toString());
         }
 
         try {
@@ -38,7 +38,10 @@ public class MapActivity extends AppCompatActivity {
                 String st = br.readLine();
                 if (st.contains("<!--массив данных-->")){
                     StringBuilder sb = new StringBuilder("var points = [");
-                    sb.append('[').append(RouteList.latitude).append(',').append(RouteList.longitude).append("],");
+                    if (RouteList.startAddress.equals("Моё местоположение"))
+                        sb.append('[').append(RouteList.latitude).append(',').append(RouteList.longitude).append("],");
+                    else
+                        strings.addFirst(RouteList.startAddress);
                     for (String s: strings){
                         sb.append('"').append(s).append('"').append(',');
                     }

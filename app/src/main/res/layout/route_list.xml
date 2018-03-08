@@ -100,13 +100,16 @@
             android:orientation="vertical"
             android:tag="line1">
 
-            <EditText
+            <TextView
                 android:layout_width="323dp"
-                android:layout_height="wrap_content"
-                android:paddingBottom="7dp"
-                android:layout_marginBottom="14dp"
+                android:layout_height="37dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="3dp"
+                android:textSize="18sp"
+                android:paddingStart="3dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="12dp"
-                android:imeOptions="actionDone"
                 android:background="#F2F2F2"
                 android:hint=" Добавить адрес"
                 android:textColor="@android:color/black" />
