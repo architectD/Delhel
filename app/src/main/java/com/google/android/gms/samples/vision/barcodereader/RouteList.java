@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -41,9 +42,9 @@ public class RouteList extends AppCompatActivity{
         setContentView(R.layout.route_list);
 
         tempField = new TextView(this);
-        address = findViewById(R.id.editText12);
+        address = (TextView) findViewById(R.id.editText12);
         address.setText(startAddress);
-        scrollView = findViewById(R.id.scrollView2);
+        scrollView = (ScrollView) findViewById(R.id.scrollView2);
         linearLayout =  (LinearLayout) scrollView.getChildAt(0);
         tempField = (TextView) linearLayout.getChildAt(0);
         tempField.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +62,8 @@ public class RouteList extends AppCompatActivity{
     }
 
     public void onClickStart(View view){
-        startActivity(new Intent(this, MapActivity.class));
+        if (textViews.size() > 0)
+            startActivity(new Intent(this, MapActivity.class));
     }
 
     @Override
@@ -82,14 +84,9 @@ public class RouteList extends AppCompatActivity{
             if (resultCode == RESULT_OK) {
                 Place place = PlaceAutocomplete.getPlace(this, data);
                 try {
-
-                    String[] addresses = place.getAddress().toString().split("ул|,|\\.| |пр");
-                    List<String> addrList = new ArrayList<>();
-                    for (String st: addresses){
-                        if (!st.isEmpty())
-                            addrList.add(st);
-                    }
-                    makeNextEnter(addrList.get(2) + ", " + addrList.get(0) + " " + addrList.get(1));
+                    String[] addresses = place.getAddress().toString().split(",");
+                    if (addresses.length >= 5)
+                        makeNextEnter(addresses[2] + ", " + addresses[0] + " " + addresses[1]);
                 } catch (Exception e){}
             }
         }
@@ -104,6 +101,7 @@ public class RouteList extends AppCompatActivity{
         bottomEditText.setHint(topEditText.getHint());
         bottomEditText.setTextSize(18);
         bottomEditText.setHintTextColor(topEditText.getHintTextColors());
+        bottomEditText.setTextColor(topEditText.getTextColors());
         bottomEditText.setBackgroundColor(((ColorDrawable)topEditText.getBackground()).getColor());
         bottomEditText.setOnClickListener(new View.OnClickListener() {
             @Override

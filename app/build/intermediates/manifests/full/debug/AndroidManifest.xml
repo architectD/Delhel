@@ -7,7 +7,7 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="24" />
+        android:targetSdkVersion="21" />
 
     <uses-feature android:name="android.hardware.location.gps" />
     <uses-feature android:name="android.hardware.camera" />
@@ -32,7 +32,6 @@
         android:icon="@drawable/icon"
         android:label="MultiTrackerApp"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.gms.version"
@@ -70,19 +69,10 @@
         <activity
             android:name="com.google.android.gms.samples.vision.barcodereader.Orders"
             android:screenOrientation="portrait" />
-
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="26.1.0" />
-
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <meta-data
-            android:name="android.arch.lifecycle.VERSION"
-            android:value="27.0.0-SNAPSHOT" />
     </application>
 
 </manifest>

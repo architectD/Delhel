@@ -24,14 +24,18 @@ import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Route extends AppCompatActivity {
 
     TextView enterField;
+    static boolean flag = false;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route);
-        enterField = findViewById(R.id.geoAddress);
+        enterField = (TextView) findViewById(R.id.geoAddress);
     }
 
     public void onClickEnterField(View view){
@@ -40,10 +44,7 @@ public class Route extends AppCompatActivity {
                     new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
                             .build(this);
             startActivityForResult(intent, 1);
-        } catch (GooglePlayServicesRepairableException e) {
-            Toast toast = Toast.makeText(this, "Требуется скачать Серивисы Google play.", Toast.LENGTH_LONG);
-            toast.show();
-        } catch (GooglePlayServicesNotAvailableException e) {
+        } catch (Exception e) {
             Toast toast = Toast.makeText(this, "Требуется скачать Серивисы Google play.", Toast.LENGTH_LONG);
             toast.show();
         }
@@ -56,7 +57,8 @@ public class Route extends AppCompatActivity {
                 Place place = PlaceAutocomplete.getPlace(this, data);
                 try {
                     String[] addresses = place.getAddress().toString().split(",");
-                    enterField.setText(addresses[2] + ", " + addresses[0].split(". ")[1] + " " + addresses[1]);
+                    if (addresses.length >= 5)
+                        enterField.setText(addresses[2] + ", " + addresses[0] + " " + addresses[1]);
                 } catch (Exception e){}
             }
         }
@@ -65,6 +67,8 @@ public class Route extends AppCompatActivity {
     public void onClickNext(View view){
         try {
             RouteList.startAddress = ((TextView)findViewById(R.id.geoAddress)).getText().toString();
+            if (RouteList.startAddress.isEmpty())
+                onClickGps(view);
             startActivity(new Intent(this, RouteList.class));
         } catch (Exception e){
             e.printStackTrace();
@@ -75,16 +79,19 @@ public class Route extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             // Acquire a reference to the system Location Manager
-            LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+            final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
             // Define a listener that responds to location updates
-            LocationListener locationListener = new LocationListener() {
+            final LocationListener locationListener = new LocationListener() {
                 public void onLocationChanged(Location location) {
-                    RouteList.latitude = location.getLatitude();
-                    RouteList.longitude = location.getLongitude();
+                    if (!flag) {
+                        flag = true;
+                        RouteList.latitude = location.getLatitude();
+                        RouteList.longitude = location.getLongitude();
 
-                    RouteList.startAddress = "Моё местоположение";
-                    startActivity(new Intent(Route.this, RouteList.class));
+                        RouteList.startAddress = "Моё местоположение";
+                        startActivity(new Intent(Route.this, RouteList.class));
+                    }
                 }
 
                 public void onStatusChanged(String provider, int status, Bundle extras) {}
@@ -98,6 +105,7 @@ public class Route extends AppCompatActivity {
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 10, locationListener);
         } else{
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 2);
+            onClickGps(view);
         }
 
     }

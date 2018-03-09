@@ -4,26 +4,24 @@ ADDED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:2:
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:2:1-55:12
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:2:1-55:12
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:2:1-55:12
-MERGED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:design:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-24.2.1.aar\c6f3c5aaae822ece3e30f98151550c41\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.4.0.aar\34e4861765037ac07645d16e33e69c7f\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-places:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-places-9.4.0.aar\2e95604e7a71cee82c36aa28e6993afb\AndroidManifest.xml:16:1-20:12
 MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\1c3bd0647840b4728d33f80bfd47fa54\AndroidManifest.xml:16:1-28:12
 MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-base-9.4.0.aar\12c58b3bce6074afc1b354d90ac84911\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.4.0.aar\5bf8160c3cd70d2db515c87b0c981b6d\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.4.0.aar\3b5b8fd5f332e47e9aa4df153cab3af8\AndroidManifest.xml:16:1-26:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\837fa86d441934ac928279afda0ac012\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:transition:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\098830e94395a66a36800b6f1154dcd5\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1e5bbea823612cdb8c904d2902bc6e7b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.2.1.aar\3c75219924375685d714e1550f22aa11\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\2047b13ee7ab19cbf3537c656f6dd044\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\276c910b54e5cc10c79b22ad2d4f20ce\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c134becfaf53a0374918ffb07f39b93a\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7e559561561e4f61ca3262f817f2dc7c\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0fdaba58fe61042263ac0531e5c0d5ec\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\78dd16f91c15b6f733a905e6f27b3d25\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\5b6b39ff9c9b130704b79c3cfc64a62e\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\35768b2e97affa1442539c7debbeed71\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cf4edbea2c3cbee797b1bf3ca7eff9b5\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a52386380db85242840edf881618f98a\AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-24.2.1.aar\f3aa3ae3c2c32e57ddb26e4a025246c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\a9e61ec548953f66b3fe7592f6916d35\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\a36ce5db57c0d86ebb70cc375c1b72f2\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.2.1.aar\2253bd81dd36f337ef111bebf5073654\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.2.1.aar\93e1970bc996dbc2de3aada76643ac81\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b511b65f4e08d424cb671cd5190e5191\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\b9aa9e632290d4c29ae9c7cc18acc2b1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\b89240673a5ff87ebe5ea9a046b8e38c\AndroidManifest.xml:17:1-27:12
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:2:1-55:12
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:2:1-55:12
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:2:1-55:12
@@ -71,8 +69,8 @@ ADDED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:11
 		ADDED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:11:22-76
 application
 ADDED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:13:5-53:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-24.2.1.aar\c6f3c5aaae822ece3e30f98151550c41\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-24.2.1.aar\c6f3c5aaae822ece3e30f98151550c41\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.4.0.aar\34e4861765037ac07645d16e33e69c7f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.4.0.aar\34e4861765037ac07645d16e33e69c7f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-places:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-places-9.4.0.aar\2e95604e7a71cee82c36aa28e6993afb\AndroidManifest.xml:19:5-20
@@ -85,32 +83,26 @@ MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\SuperDru
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.4.0.aar\5bf8160c3cd70d2db515c87b0c981b6d\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.4.0.aar\3b5b8fd5f332e47e9aa4df153cab3af8\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.4.0.aar\3b5b8fd5f332e47e9aa4df153cab3af8\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\837fa86d441934ac928279afda0ac012\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\837fa86d441934ac928279afda0ac012\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\098830e94395a66a36800b6f1154dcd5\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\098830e94395a66a36800b6f1154dcd5\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1e5bbea823612cdb8c904d2902bc6e7b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1e5bbea823612cdb8c904d2902bc6e7b\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.2.1.aar\3c75219924375685d714e1550f22aa11\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.2.1.aar\3c75219924375685d714e1550f22aa11\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\2047b13ee7ab19cbf3537c656f6dd044\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\2047b13ee7ab19cbf3537c656f6dd044\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\276c910b54e5cc10c79b22ad2d4f20ce\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\276c910b54e5cc10c79b22ad2d4f20ce\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c134becfaf53a0374918ffb07f39b93a\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c134becfaf53a0374918ffb07f39b93a\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7e559561561e4f61ca3262f817f2dc7c\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7e559561561e4f61ca3262f817f2dc7c\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0fdaba58fe61042263ac0531e5c0d5ec\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0fdaba58fe61042263ac0531e5c0d5ec\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\78dd16f91c15b6f733a905e6f27b3d25\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\78dd16f91c15b6f733a905e6f27b3d25\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\5b6b39ff9c9b130704b79c3cfc64a62e\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\5b6b39ff9c9b130704b79c3cfc64a62e\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\35768b2e97affa1442539c7debbeed71\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\35768b2e97affa1442539c7debbeed71\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cf4edbea2c3cbee797b1bf3ca7eff9b5\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cf4edbea2c3cbee797b1bf3ca7eff9b5\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a52386380db85242840edf881618f98a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a52386380db85242840edf881618f98a\AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:24:5-28:19
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\a9e61ec548953f66b3fe7592f6916d35\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\a9e61ec548953f66b3fe7592f6916d35\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\a36ce5db57c0d86ebb70cc375c1b72f2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\a36ce5db57c0d86ebb70cc375c1b72f2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.2.1.aar\2253bd81dd36f337ef111bebf5073654\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.2.1.aar\2253bd81dd36f337ef111bebf5073654\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.2.1.aar\93e1970bc996dbc2de3aada76643ac81\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.2.1.aar\93e1970bc996dbc2de3aada76643ac81\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b511b65f4e08d424cb671cd5190e5191\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b511b65f4e08d424cb671cd5190e5191\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\b9aa9e632290d4c29ae9c7cc18acc2b1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\b9aa9e632290d4c29ae9c7cc18acc2b1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\b89240673a5ff87ebe5ea9a046b8e38c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\b89240673a5ff87ebe5ea9a046b8e38c\AndroidManifest.xml:25:5-20
 	android:supportsRtl
 		ADDED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml:19:9-37
 	android:label
@@ -199,8 +191,8 @@ uses-sdk
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-24.2.1.aar\c6f3c5aaae822ece3e30f98151550c41\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-24.2.1.aar\c6f3c5aaae822ece3e30f98151550c41\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.4.0.aar\34e4861765037ac07645d16e33e69c7f\AndroidManifest.xml:4:5-42
 MERGED from [com.google.android.gms:play-services-vision:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.4.0.aar\34e4861765037ac07645d16e33e69c7f\AndroidManifest.xml:4:5-42
 MERGED from [com.google.android.gms:play-services-places:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-places-9.4.0.aar\2e95604e7a71cee82c36aa28e6993afb\AndroidManifest.xml:18:5-42
@@ -213,36 +205,32 @@ MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\SuperDru
 MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.4.0.aar\5bf8160c3cd70d2db515c87b0c981b6d\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.4.0.aar\3b5b8fd5f332e47e9aa4df153cab3af8\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.4.0.aar\3b5b8fd5f332e47e9aa4df153cab3af8\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\837fa86d441934ac928279afda0ac012\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\837fa86d441934ac928279afda0ac012\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:transition:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\098830e94395a66a36800b6f1154dcd5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\098830e94395a66a36800b6f1154dcd5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1e5bbea823612cdb8c904d2902bc6e7b\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1e5bbea823612cdb8c904d2902bc6e7b\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.2.1.aar\3c75219924375685d714e1550f22aa11\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.2.1.aar\3c75219924375685d714e1550f22aa11\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\2047b13ee7ab19cbf3537c656f6dd044\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\2047b13ee7ab19cbf3537c656f6dd044\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\276c910b54e5cc10c79b22ad2d4f20ce\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\276c910b54e5cc10c79b22ad2d4f20ce\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c134becfaf53a0374918ffb07f39b93a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c134becfaf53a0374918ffb07f39b93a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7e559561561e4f61ca3262f817f2dc7c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7e559561561e4f61ca3262f817f2dc7c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0fdaba58fe61042263ac0531e5c0d5ec\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0fdaba58fe61042263ac0531e5c0d5ec\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\78dd16f91c15b6f733a905e6f27b3d25\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\78dd16f91c15b6f733a905e6f27b3d25\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\5b6b39ff9c9b130704b79c3cfc64a62e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\5b6b39ff9c9b130704b79c3cfc64a62e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\35768b2e97affa1442539c7debbeed71\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\35768b2e97affa1442539c7debbeed71\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cf4edbea2c3cbee797b1bf3ca7eff9b5\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cf4edbea2c3cbee797b1bf3ca7eff9b5\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a52386380db85242840edf881618f98a\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a52386380db85242840edf881618f98a\AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-24.2.1.aar\f3aa3ae3c2c32e57ddb26e4a025246c7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-24.2.1.aar\f3aa3ae3c2c32e57ddb26e4a025246c7\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\a9e61ec548953f66b3fe7592f6916d35\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\a9e61ec548953f66b3fe7592f6916d35\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\a36ce5db57c0d86ebb70cc375c1b72f2\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\a36ce5db57c0d86ebb70cc375c1b72f2\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.2.1.aar\2253bd81dd36f337ef111bebf5073654\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-24.2.1.aar\2253bd81dd36f337ef111bebf5073654\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.2.1.aar\93e1970bc996dbc2de3aada76643ac81\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-24.2.1.aar\93e1970bc996dbc2de3aada76643ac81\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b511b65f4e08d424cb671cd5190e5191\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b511b65f4e08d424cb671cd5190e5191\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\b9aa9e632290d4c29ae9c7cc18acc2b1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\b9aa9e632290d4c29ae9c7cc18acc2b1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\b89240673a5ff87ebe5ea9a046b8e38c\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\b89240673a5ff87ebe5ea9a046b8e38c\AndroidManifest.xml:21:5-23:58
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
 INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-24.2.1.aar\3c75219924375685d714e1550f22aa11\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
 		ADDED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
@@ -251,34 +239,6 @@ INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
 		ADDED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android projects\DelHel\Delhel\app\src\main\AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\837fa86d441934ac928279afda0ac012\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\837fa86d441934ac928279afda0ac012\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\098830e94395a66a36800b6f1154dcd5\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\098830e94395a66a36800b6f1154dcd5\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1e5bbea823612cdb8c904d2902bc6e7b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\1e5bbea823612cdb8c904d2902bc6e7b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c134becfaf53a0374918ffb07f39b93a\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\c134becfaf53a0374918ffb07f39b93a\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7e559561561e4f61ca3262f817f2dc7c\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\7e559561561e4f61ca3262f817f2dc7c\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0fdaba58fe61042263ac0531e5c0d5ec\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\0fdaba58fe61042263ac0531e5c0d5ec\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\78dd16f91c15b6f733a905e6f27b3d25\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\78dd16f91c15b6f733a905e6f27b3d25\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\5b6b39ff9c9b130704b79c3cfc64a62e\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\5b6b39ff9c9b130704b79c3cfc64a62e\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\35768b2e97affa1442539c7debbeed71\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\35768b2e97affa1442539c7debbeed71\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cf4edbea2c3cbee797b1bf3ca7eff9b5\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cf4edbea2c3cbee797b1bf3ca7eff9b5\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a52386380db85242840edf881618f98a\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\a52386380db85242840edf881618f98a\AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:28:13-35
-	android:name
-		ADDED from [com.android.support:design:26.1.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\271c8b6bd0bba538002dd477eb0a416d\AndroidManifest.xml:27:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.4.0.aar\1c3bd0647840b4728d33f80bfd47fa54\AndroidManifest.xml:20:5-78
 	android:name
@@ -297,9 +257,3 @@ ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\SuperDru\.
 		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-base-9.4.0.aar\12c58b3bce6074afc1b354d90ac84911\AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\play-services-base-9.4.0.aar\12c58b3bce6074afc1b354d90ac84911\AndroidManifest.xml:20:19-85
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:25:9-27:47
-	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:27:13-44
-	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SuperDru\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\d451ec46b335226f038c7e485802dd10\AndroidManifest.xml:26:13-58

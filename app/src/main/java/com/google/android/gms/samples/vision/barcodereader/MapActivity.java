@@ -11,6 +11,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashSet;
 import java.util.LinkedList;
 
 public class MapActivity extends AppCompatActivity {
@@ -20,11 +21,11 @@ public class MapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.map_activity);
 
-        WebView myWebView = findViewById(R.id.webView);
+        WebView myWebView = (WebView) findViewById(R.id.webView);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        LinkedList<String> strings = new LinkedList<>();
+        HashSet<String> strings = new HashSet<>();
         for (TextView textView: RouteList.textViews){
             strings.add(textView.getText().toString());
         }
@@ -41,7 +42,7 @@ public class MapActivity extends AppCompatActivity {
                     if (RouteList.startAddress.equals("Моё местоположение"))
                         sb.append('[').append(RouteList.latitude).append(',').append(RouteList.longitude).append("],");
                     else
-                        strings.addFirst(RouteList.startAddress);
+                        sb.append('"').append(RouteList.startAddress).append("\",");
                     for (String s: strings){
                         sb.append('"').append(s).append('"').append(',');
                     }
