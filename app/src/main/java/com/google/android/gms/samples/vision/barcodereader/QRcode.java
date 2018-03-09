@@ -109,13 +109,15 @@ public class QRcode extends AppCompatActivity {
 
     public void ScreenOnClick(View view){
         if (lastStr != null && !set.contains(lastStr.displayValue)) {
+            Toast toast = Toast.makeText(this, "Добавлено", Toast.LENGTH_SHORT);
+            toast.show();
             set.add(lastStr.displayValue);
             Intent data = new Intent();
             data.putExtra("Barcode", lastStr);
             setResult(CommonStatusCodes.SUCCESS, data);
             finish();
         } else{
-            Toast toast = Toast.makeText(this, "Retry again", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Попробуйте снова", Toast.LENGTH_SHORT);
             toast.show();
         }
     }

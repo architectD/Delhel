@@ -27,7 +27,7 @@ public class MapActivity extends AppCompatActivity {
 
         HashSet<String> strings = new HashSet<>();
         for (TextView textView: RouteList.textViews){
-            strings.add(textView.getText().toString());
+            strings.add(RouteList.town + ", " + textView.getText().toString());
         }
 
         try {

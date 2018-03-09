@@ -26,15 +26,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="8dp"
         android:text="Адрес отправления"
-        android:textColor="#4D4D4D"
-        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
@@ -44,17 +44,17 @@
 
     <TextView
         android:id="@+id/editText12"
-        android:layout_width="323dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:paddingBottom="7dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="12dp"
-        android:background="#F2F2F2"
+        android:background="#dad9d9"
+        android:paddingBottom="7dp"
         android:scrollbars="horizontal"
         android:singleLine="true"
         android:textColor="@android:color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,15 +62,15 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
         android:layout_marginTop="8dp"
         android:text="Введите адреса доставки"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
@@ -81,17 +81,16 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="357dp"
-        android:layout_height="269dp"
+        android:layout_height="321dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView5"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.074">
 
         <LinearLayout
             android:id="@+id/line1"
@@ -101,18 +100,19 @@
             android:tag="line1">
 
             <TextView
-                android:layout_width="323dp"
+                android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:paddingBottom="5dp"
-                android:paddingEnd="3dp"
-                android:paddingTop="3dp"
-                android:textSize="18sp"
-                android:paddingStart="3dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="12dp"
-                android:background="#F2F2F2"
+                android:layout_marginRight="12dp"
+                android:background="#dad9d9"
                 android:hint=" Добавить адрес"
-                android:textColor="@android:color/black" />
+                android:paddingBottom="5dp"
+                android:paddingEnd="3dp"
+                android:paddingStart="3dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>
@@ -148,10 +148,13 @@
         android:background="@android:color/transparent"
         android:onClick="onClickBarCode"
         android:text="Добавить через QR-коды"
-        android:textColor="#4D4D4D"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.333" />
 
 </android.support.constraint.ConstraintLayout>

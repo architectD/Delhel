@@ -35,7 +35,7 @@ public class RouteList extends AppCompatActivity{
     ScrollView scrollView;
     LinearLayout linearLayout;
     TextView address, tempField;
-    public static String startAddress;
+    public static String startAddress = "", town = "";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,9 +92,12 @@ public class RouteList extends AppCompatActivity{
         }
     }
 
-    private void makeNextEnter(String place){
+    void makeNextEnter(String place){
         TextView topEditText = (TextView) linearLayout.getChildAt(linearLayout.getChildCount() - 1);
-        topEditText.setText(place);
+
+        if (town.isEmpty())
+            town = place.substring(0, place.indexOf(','));
+        topEditText.setText(place.substring(place.indexOf(',') + 2));
 
         TextView bottomEditText = new TextView(this);
         bottomEditText.setLayoutParams(topEditText.getLayoutParams());

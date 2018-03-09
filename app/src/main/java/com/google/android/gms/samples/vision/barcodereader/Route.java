@@ -30,11 +30,12 @@ import java.util.List;
 public class Route extends AppCompatActivity {
 
     TextView enterField;
-    static boolean flag = false;
+    static boolean flag;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route);
+        flag = false;
         enterField = (TextView) findViewById(R.id.geoAddress);
     }
 
@@ -66,10 +67,16 @@ public class Route extends AppCompatActivity {
 
     public void onClickNext(View view){
         try {
-            RouteList.startAddress = ((TextView)findViewById(R.id.geoAddress)).getText().toString();
-            if (RouteList.startAddress.isEmpty())
-                onClickGps(view);
-            startActivity(new Intent(this, RouteList.class));
+            String str = ((TextView) findViewById(R.id.geoAddress)).getText().toString();
+            if (!RouteList.startAddress.isEmpty() && str.isEmpty())
+                startActivity(new Intent(Route.this, RouteList.class));
+            else {
+                RouteList.startAddress = str;
+                if (str.isEmpty())
+                    onClickGps(view);
+                else
+                    startActivity(new Intent(Route.this, RouteList.class));
+            }
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -78,10 +85,8 @@ public class Route extends AppCompatActivity {
     public void onClickGps(View view){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Acquire a reference to the system Location Manager
             final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
-            // Define a listener that responds to location updates
             final LocationListener locationListener = new LocationListener() {
                 public void onLocationChanged(Location location) {
                     if (!flag) {
@@ -101,7 +106,6 @@ public class Route extends AppCompatActivity {
                 public void onProviderDisabled(String provider) {}
             };
 
-            // Register the listener with the Location Manager to receive location updates
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 10, locationListener);
         } else{
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 2);
