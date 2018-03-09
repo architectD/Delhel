@@ -31,7 +31,7 @@ public class RouteList extends AppCompatActivity{
     public static double latitude, longitude;
 
 
-    public static LinkedList<TextView> textViews = new LinkedList<>();
+    public static LinkedList<TextView> textViews;
     ScrollView scrollView;
     LinearLayout linearLayout;
     TextView address, tempField;
@@ -53,6 +53,8 @@ public class RouteList extends AppCompatActivity{
                 clickPlace();
             }
         });
+        textViews = new LinkedList<>();
+        QRcode.set.clear();
     }
 
     public void onClickBarCode(View view){

@@ -31,7 +31,7 @@ public class QRcode extends AppCompatActivity {
     CameraSource cameraSource;
     final int RequestCameraPermissionID = 1001;
 
-    static HashSet<String> set = new HashSet<>();
+    public static HashSet<String> set = new HashSet<>();
 
     Barcode lastStr = null;
 
