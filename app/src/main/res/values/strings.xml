@@ -17,4 +17,5 @@
     <string name="hintTextView">Вы можете вписать адрес вручную или включить службу геолокации</string>
     <string name="enterLocationTextView">Введите свое местоположение</string>
     <string name="startPosition">Начальная  позиция</string>
+    <string name="btn_add_qr_code"><u>Добавить через QR-коды</u></string>
 </resources>
