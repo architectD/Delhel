@@ -2,9 +2,11 @@ package com.google.android.gms.samples.vision.barcodereader;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -15,6 +17,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 
 public class MapActivity extends AppCompatActivity {
+
+    //ProgressBar progressBar = (ProgressBar)findViewById(R.id.progressBar3);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

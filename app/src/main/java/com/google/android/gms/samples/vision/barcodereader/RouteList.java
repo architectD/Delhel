@@ -107,6 +107,10 @@ public class RouteList extends AppCompatActivity{
 
             TextView bottomEditText = new TextView(this);
             bottomEditText.setLayoutParams(topEditText.getLayoutParams());
+            bottomEditText.setPadding(topEditText.getCompoundPaddingLeft(),
+                    topEditText.getCompoundPaddingTop(),
+                    topEditText.getCompoundPaddingRight(),
+                    topEditText.getCompoundPaddingBottom());
             bottomEditText.setHint(topEditText.getHint());
             bottomEditText.setTextSize(18);
             bottomEditText.setHintTextColor(topEditText.getHintTextColors());
