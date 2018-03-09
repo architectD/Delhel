@@ -97,27 +97,30 @@ public class RouteList extends AppCompatActivity{
     void makeNextEnter(String place){
         TextView topEditText = (TextView) linearLayout.getChildAt(linearLayout.getChildCount() - 1);
 
+        String str = place.substring(0, place.indexOf(','));
         if (town.isEmpty())
-            town = place.substring(0, place.indexOf(','));
-        topEditText.setText(place.substring(place.indexOf(',') + 2));
+            town = str;
+        if (str.equals(town)) {
+            topEditText.setText(place.substring(place.indexOf(',') + 2));
 
-        TextView bottomEditText = new TextView(this);
-        bottomEditText.setLayoutParams(topEditText.getLayoutParams());
-        bottomEditText.setHint(topEditText.getHint());
-        bottomEditText.setTextSize(18);
-        bottomEditText.setHintTextColor(topEditText.getHintTextColors());
-        bottomEditText.setTextColor(topEditText.getTextColors());
-        bottomEditText.setBackgroundColor(((ColorDrawable)topEditText.getBackground()).getColor());
-        bottomEditText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                clickPlace();
-            }
-        });
-        topEditText.setOnClickListener(null);
+            TextView bottomEditText = new TextView(this);
+            bottomEditText.setLayoutParams(topEditText.getLayoutParams());
+            bottomEditText.setHint(topEditText.getHint());
+            bottomEditText.setTextSize(18);
+            bottomEditText.setHintTextColor(topEditText.getHintTextColors());
+            bottomEditText.setTextColor(topEditText.getTextColors());
+            bottomEditText.setBackgroundColor(((ColorDrawable) topEditText.getBackground()).getColor());
+            bottomEditText.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    clickPlace();
+                }
+            });
+            topEditText.setOnClickListener(null);
 
-        linearLayout.addView(bottomEditText);
-        textViews.add(topEditText);
+            linearLayout.addView(bottomEditText);
+            textViews.add(topEditText);
+        }
     }
 
     private void clickPlace() {

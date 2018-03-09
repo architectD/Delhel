@@ -553,9 +553,9 @@ public final class R {
         public static final int middle = 0x7f07005d;
         public static final int multiply = 0x7f07005f;
         public static final int never = 0x7f070061;
-        public static final int none = 0x7f070063;
-        public static final int normal = 0x7f070064;
-        public static final int parentPanel = 0x7f070068;
+        public static final int none = 0x7f070062;
+        public static final int normal = 0x7f070063;
+        public static final int parentPanel = 0x7f070067;
         public static final int progress_circular = 0x7f070073;
         public static final int progress_horizontal = 0x7f070074;
         public static final int radio = 0x7f070075;

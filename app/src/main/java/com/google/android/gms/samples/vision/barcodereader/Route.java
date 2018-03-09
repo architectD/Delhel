@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,11 +32,13 @@ public class Route extends AppCompatActivity {
 
     TextView enterField;
     static boolean flag;
+    ProgressBar progressBar;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route);
         flag = false;
+        progressBar = (ProgressBar)findViewById(R.id.progressBar);
         enterField = (TextView) findViewById(R.id.geoAddress);
     }
 
@@ -58,45 +61,31 @@ public class Route extends AppCompatActivity {
                 Place place = PlaceAutocomplete.getPlace(this, data);
                 try {
                     String[] addresses = place.getAddress().toString().split(",");
-                    if (addresses.length >= 5)
+                    if (addresses.length >= 5) {
                         enterField.setText(addresses[2] + ", " + addresses[0] + " " + addresses[1]);
+                        RouteList.startAddress = ((TextView) findViewById(R.id.geoAddress)).getText().toString();
+                        progressBar.setVisibility(View.INVISIBLE);
+                        startActivity(new Intent(Route.this, RouteList.class));
+                    }
                 } catch (Exception e){}
             }
         }
     }
 
-    public void onClickNext(View view){
-        try {
-            String str = ((TextView) findViewById(R.id.geoAddress)).getText().toString();
-            if (!RouteList.startAddress.isEmpty() && str.isEmpty())
-                startActivity(new Intent(Route.this, RouteList.class));
-            else {
-                RouteList.startAddress = str;
-                if (str.isEmpty())
-                    onClickGps(view);
-                else
-                    startActivity(new Intent(Route.this, RouteList.class));
-            }
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-    }
 
     public void onClickGps(View view){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             final LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-
+            progressBar.setVisibility(View.VISIBLE);
             final LocationListener locationListener = new LocationListener() {
                 public void onLocationChanged(Location location) {
-                    if (!flag) {
-                        flag = true;
-                        RouteList.latitude = location.getLatitude();
-                        RouteList.longitude = location.getLongitude();
+                    progressBar.setVisibility(View.INVISIBLE);
+                    RouteList.latitude = location.getLatitude();
+                    RouteList.longitude = location.getLongitude();
 
-                        RouteList.startAddress = "Моё местоположение";
-                        startActivity(new Intent(Route.this, RouteList.class));
-                    }
+                    RouteList.startAddress = "Моё местоположение";
+                    startActivity(new Intent(Route.this, RouteList.class));
                 }
 
                 public void onStatusChanged(String provider, int status, Bundle extras) {}
