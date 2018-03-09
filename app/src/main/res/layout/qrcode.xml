@@ -40,6 +40,7 @@
         android:layout_marginTop="16dp"
         android:background="#4D000000"
         android:text="Назад"
+        android:onClick="backOnClick"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

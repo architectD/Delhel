@@ -121,4 +121,10 @@ public class QRcode extends AppCompatActivity {
             toast.show();
         }
     }
+
+    public void backOnClick(View view){
+        RouteList.flag = true;
+        setResult(CommonStatusCodes.SUCCESS, null);
+        finish();
+    }
 }

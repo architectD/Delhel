@@ -97,9 +97,11 @@ public class RouteList extends AppCompatActivity{
     void makeNextEnter(String place){
         TextView topEditText = (TextView) linearLayout.getChildAt(linearLayout.getChildCount() - 1);
 
-        String str = place.substring(0, place.indexOf(','));
+        String str = place.substring(0, place.indexOf(',')).trim();
         if (town.isEmpty())
             town = str;
+
+
         if (str.equals(town)) {
             topEditText.setText(place.substring(place.indexOf(',') + 2));
 
@@ -120,6 +122,10 @@ public class RouteList extends AppCompatActivity{
 
             linearLayout.addView(bottomEditText);
             textViews.add(topEditText);
+        }
+        else{
+            Toast toast = Toast.makeText(this, "Вводите адреса в пределах одного города: " + town, Toast.LENGTH_SHORT);
+            toast.show();
         }
     }
 
