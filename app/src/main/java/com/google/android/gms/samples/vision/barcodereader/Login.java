@@ -20,8 +20,4 @@ public class Login extends AppCompatActivity {
     public void onClickEnter(View view){
         startActivity(new Intent(this, Route.class));
     }
-
-    public void onClickEnterClient(View view){
-        startActivity(new Intent(this, Orders.class));
-    }
 }

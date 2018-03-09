@@ -57,7 +57,7 @@ public class RouteList extends AppCompatActivity{
 
     public void onClickBarCode(View view){
         flag = false;
-        Intent intent = new Intent(this, BarcodeCaptureActivity.class);
+        Intent intent = new Intent(this, QRcode.class);
         startActivityForResult(intent, RC_BARCODE_CAPTURE);
     }
 
@@ -71,11 +71,11 @@ public class RouteList extends AppCompatActivity{
         if (requestCode == RC_BARCODE_CAPTURE) {
             if (resultCode == CommonStatusCodes.SUCCESS) {
                 if (data != null && !flag) {
-                    Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
+                    Barcode barcode = data.getParcelableExtra("Barcode");
 
                     makeNextEnter(barcode.displayValue);
 
-                    Intent intent = new Intent(this, BarcodeCaptureActivity.class);
+                    Intent intent = new Intent(this, QRcode.class);
                     startActivityForResult(intent, RC_BARCODE_CAPTURE);
                 }
             }
